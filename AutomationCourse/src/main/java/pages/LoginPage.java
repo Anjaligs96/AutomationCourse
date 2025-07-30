@@ -22,13 +22,13 @@ public class LoginPage {
 	@FindBy(id = "login-button")
 	private WebElement loginbutton;
 
-	public void enterUserNameOnUserNameField() {
-		username.sendKeys("standard_user");
+	public void enterUserNameOnUserNameField(String username1) {
+		username.sendKeys(username1);
 
 	}
 
-	public void enterPasswordOnPasswordField() {
-		password.sendKeys("secret_sauce");
+	public void enterPasswordOnPasswordField(String password1) {
+		password.sendKeys(password1);
 	}
 
 	public void clickOnSignInButton() {
